@@ -1,148 +1,122 @@
+Input "Code=?",C
+If C≠2711:Then
+Disp "Vous êtes un intrus!"
+Stop
+End
+0→C
 EffÉcran
-Output(1,5,"#")
-Output(1,4,"#")
-Output(2,5,"#")
-Output(2,4,"#")
-Output(3,5,"#")
-Output(3,4,"#")
-Output(4,5,"#")
-Output(4,4,"#")
-Output(1,22,"#")
-Output(1,23,"#")
-Output(2,22,"#")
-Output(2,23,"#")
-Output(3,22,"#")
-Output(3,23,"#")
-Output(4,22,"#")
-Output(4,23,"#")
-Output(6,6,"#")
-Output(6,7,"#")
-Output(7,8,"#")
-Output(7,9,"#")
-Output(7,10,"#")
-Output(7,11,"#")
-Output(7,12,"#")
-Output(7,13,"#")
-Output(7,14,"#")
-Output(7,15,"#")
-Output(7,16,"#")
-Output(7,17,"#")
-Output(7,18,"#")
-Output(7,19,"#")
-Output(6,20,"#")
-Output(6,21,"#")
-Output(8,2,"> Bonjour…")
-Wait 1
-Output(6,21," ")
-Output(6,6," ")
-Output(5,8,"#")
-Output(5,9,"#")
-Output(5,10,"#")
-Output(5,11,"#")
-Output(5,12,"#")
-Output(5,13,"#")
-Output(5,14,"#")
-Output(5,15,"#")
-Output(5,16,"#")
-Output(5,17,"#")
-Output(5,18,"#")
-Output(5,19,"#")
-Output(9,2,"> Je m'appelle PAMA !")
-Wait 1
-Output(5,8," ")
-Output(5,9," ")
-Output(5,10," ")
-Output(5,11," ")
-Output(5,12," ")
-Output(5,13," ")
-Output(5,14," ")
-Output(5,15," ")
-Output(5,16," ")
-Output(5,17," ")
-Output(5,18," ")
-Output(5,19," ")
-Output(6,21," ")
-Output(6,6," ")
-Output(1,5," ")
-Output(1,4," ")
-Output(2,5," ")
-Output(2,4," ")
-Output(3,5," ")
-Output(3,4," ")
-Output(4,5," ")
-Output(4,4," ")
-Output(1,22," ")
-Output(1,23," ")
-Output(2,22," ")
-Output(2,23," ")
-Output(3,22," ")
-Output(3,23," ")
-Output(4,22," ")
-Output(4,23," ")
-Output(6,7," ")
-Output(7,8," ")
-Output(7,9," ")
-Output(7,10," ")
-Output(7,11," ")
-Output(7,12," ")
-Output(7,13," ")
-Output(7,14," ")
-Output(7,15," ")
-Output(7,16," ")
-Output(7,17," ")
-Output(7,18," ")
-Output(7,19," ")
-Output(6,20," ")
-Output(10,2,"> Initialisation…")
-Output(4,11,"*")
-Wait 0.5
-Output(4,11," ")
-Output(4,13,"*")
-Wait 0.5
-Output(4,13," ")
-Output(4,15,"*")
-Wait 0.5
-Output(4,15," ")
-Output(4,11,"*")
-Wait 0.5
-Output(4,11," ")
-Output(4,13,"*")
-Wait 0.5
-Output(4,13," ")
-Output(4,15,"*")
-Wait 0.5
-EffÉcran
-FoncNAff 
-AxesNAff
-0→Xmin
-0→Ymin
 Goto 1
 
 Lbl 1
 Menu("     - MENU DE PAMA -     ","Jeux…",2,"Outils…",3,"À propos",4,"Quitter",0)
 
 Lbl 4
-1000→Ymax
-Texte(1000,0,"Appuyer sur une touche pour quitter
+Output(1,8,"PAMA (c) 2016")
+Output(2,4,"Prototype Autonomous")
+Output(3,6,"Management Agent")
+Output(5,11,"-----")
+Output(7,4,"Créé par Thérence F.")
+Output(8,4,"Available on GitHub")
 Pause 
+EffÉcran
 Goto 1
 
 Lbl 0
-FoncAff 
-AxesAff 
-ZStandard
 EffÉcran
 Stop
 
 Lbl 2
-EffDess
-Menu("         - JEUX -         ","Snake",22,"Retour",1)
+Menu("         - JEUX -         ","Snake",22,"PacMan",23,"Portal",24,"Retour",1)
 
 Lbl 3
-EffDess
-Menu("        - OUTILS -        ","Maths…",31,"Physique…",32,"SI-GM…",33,"SI-GE…",34,"Retour",1)
+Menu("        - OUTILS -        ","Maths…",31,"Physique…",32,"SI-GM…",33,"SI-GE…",34,"Autres…",35,"Retour",1)
+
+Lbl 31
+Menu("    - OUTILS / Maths -    ","Suites arith.",A,"Suites géom.",B,"Dérivés",C,"Primitives",D,"Loi Binomiale",E,"Retour",3)
+
+Lbl A
+Output(1,1,"En général:")
+Output(3,1,"  U(n)=U(0)+nr")
+Output(4,1,"  U(n)=U(p)+(n-p)r")
+Output(6,1,"Somme des termes:")
+Output(8,1,"        (1Term + DerTerm)")
+Output(9,1,"nbrTerm*(---------------)")
+Output(10,1,"        (        2      )")
+Pause 
+EffÉcran
+Goto 31
+
+Lbl B
+Output(1,1,"En général:")
+Output(3,1,"  U(n)=U(0)*q^n")
+Output(4,1,"  U(n)=U(p)*q^n-p")
+Output(6,1,"Somme des termes:")
+Output(8,1,"      (1 - q^nbrTerm)")
+Output(9,1,"1Term*(-------------)")
+Output(10,1,"      (    1 - q    )")
+Pause 
+EffÉcran
+Goto 31
+
+Lbl C
+Output(1,1,"nx : n")
+Output(3,1,"x^n : nx^(n-1)")
+Output(5,1,"1/x : -1/x²")
+Output(7,1,"√(x) : 1/2√(x)")
+Output(9,1,"1/x^n : -n/x^(n+1)")
+Pause 
+EffÉcran
+Goto 31
+
+Lbl D
+Output(1,1,"k : kx (+c)")
+Output(2,1,"           n     1     n"
+Output(3,1,"          x  :  --- * x +1")
+Output(4,1,"                n+1"
+Output(5,1,"1/√(x) : 2√(x)")
+Output(7,1,"1/x^n = x^-n")
+Output(8,1,"                    -1")
+Output(9,1,"           ou : ----------")
+Output(10,1,"               (n-1)x^(n-1)"
+Pause 
+EffÉcran
+Goto 31
+
+Lbl E
+Output(1,1,"La situation est la repet-")
+Output(2,1," ition de n expérience de ")
+Output(3,1," Bernoulli identiques et  ")
+Output(4,1,"  indépendantes dont le   ")
+Output(5,1," succès est '?' de proba  ")
+Output(6,1,"  p=x et l'echec '?' de   ")
+Output(7,1,"       proba 1-p=y.       ")
+Pause 
+EffÉcran
+Output(1,1,"X est la variable aléatoir")
+Output(2,1," qui compte le nombre de  ")
+Output(3,1,"  succès. Donc X~B(n,p)   ")
+Pause 
+EffÉcran
+Goto 31
+
+Lbl 32
+Menu("  - OUTILS / Physique -   ","Retour",3)
+
+Lbl 33
+Menu("    - OUTILS / SI-GM -    ","Retour",3)
+
+Lbl 34
+Menu("    - OUTILS / SI-GE -    ","Retour",3)
+
+Lbl 35
+Menu("   - OUTILS / Autres -    ","Horloge",H,"Retour",3)
 
 Lbl 22
+EffDess
+FoncNAff 
+AxesNAff
+0→Xmin
+0→Ymin
 1→X
 164→Ymax
 0→S
@@ -228,4 +202,15 @@ Output(1,1,"GAME OVER
 Output(2,1,"SCORE:
 Output(2,7,S
 Pause 
+FoncAff 
+AxesAff 
+ZStandard
+Goto 2
+
+Lbl 23
+Asm(prgmPACMAN)
+Goto 2
+
+Lbl 24
+Asm(prgmPORTAL)
 Goto 2
