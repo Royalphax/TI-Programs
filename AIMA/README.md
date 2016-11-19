@@ -10,4 +10,4 @@ This program provides a smart menu with games and physics/maths/mecanics/electro
 <li>AIMNOMEN.8xp : Permet d'ajouter la fonctionnalitée "nomenclature" au programme AIMA.</li>
 </ul>
 <hr/>
-<i>NOTE: Il est conseillé de cliquer sur 'télécharger' plutot que de copier le code de chaque programme dans TI Connect CE.</i>
+<i>NOTE: Il est conseillé de cliquer sur 'download' plutot que de copier le code de chaque programme dans TI Connect CE.</i>
