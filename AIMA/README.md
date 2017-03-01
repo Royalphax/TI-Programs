@@ -2,7 +2,7 @@
 This program provides a smart menu with games and physics/maths/mecanics/electronics revision chapters.
 <br/>Requirements: FRENCH <a href="https://education.ti.com/fr/france/products/calculatrices-graphiques/ti-83-premium-ce/tabs/overview">TI-83 Premium CE</a> calculator.
 <hr/>
-<i>{!} Après chaque lancement du menu principal, il vous sera nécessaire d'appuyer sur la touche [5] de votre calculatrice.</i>
+<i>[!] Au début de chaque lancement du programme, il vous sera nécessaire d'appuyer sur la touche (-) de votre calculatrice pour ouvrir le menu principal.</i>
 <hr/>
 <h3>Contenu</h3>
 <ul>
