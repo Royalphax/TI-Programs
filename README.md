@@ -5,6 +5,6 @@ To do so, you will need to install <a href="https://education.ti.com/fr/france/p
 <ol>
 <li>Connect your calculator to your PC/Laptop.</li>
 <li>Open TI Connect CE</li>
-<li>Go into the calculator explorer section and drag and drop the program into it.</li>
+<li>Go into the calculator explorer section and drop the program into it.</li>
 <li>That's it! You're ready to go now :)</li>
 </ol>
